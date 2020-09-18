@@ -12,9 +12,6 @@ describe Game do
       game.attack(player_2)
     end
   end
-<<<<<<< HEAD
- 
-=======
 end
 
 describe Game do
@@ -33,6 +30,5 @@ describe Game do
       expect(game.player_2).to eq(player_2)
     end
   end
->>>>>>> f704e555c01617e95e9fdf4dbcbefc6251220624
 
 end
