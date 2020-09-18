@@ -9,5 +9,9 @@ class Player
     @name = name
     @hit_points = hit_points
   end
+
+  def name
+    @name
+  end
   
 end
