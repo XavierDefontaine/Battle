@@ -12,4 +12,12 @@ feature 'Attacking' do
     expect(page).not_to have_content 'Builder: 60HP'
     expect(page).to have_content 'Builder: 50HP'
   end
+
+  scenario'player one can attack after player two' do
+    sign_in_and_play
+    click_button 'Attack'
+    expect(page).to have_content 'Builder: 50HP'
+    click_button 'Attack'
+    expect(page).to have_content 'Bob: 50HP'
+  end
 end
